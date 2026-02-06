@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markelora</title>
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://markelora.com" />
+    <link rel="icon" type="image/png" href="/markelora/favicon.png" />
+    
+    <script type="module" crossorigin src="/markelora/commonHelpers3.js"></script>
+    <link rel="modulepreload" crossorigin href="/markelora/assets/header-5661b018.js">
+    <link rel="modulepreload" crossorigin href="/markelora/assets/vendor-5ebdfd98.js">
+    <link rel="stylesheet" href="/markelora/assets/header-e3f7cc0e.css">
+    <link rel="stylesheet" href="/markelora/assets/vendor-d9eb7f85.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header-container">
+    <nav class="nav">
+      <a class="header-logo-link" href="./">
+        <img
+          class="header-logo-img"
+          src="data:image/png;base64,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"
+          alt="Logo"
+          width="40"
+          height="40"
+      /></a>
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#about">About</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#play">How To Play</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#uniqueness">Uniqueness</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#features"
+            >Benefits & Features</a
+          >
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#gallery">Gallery</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#advantages">Why Us</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#contact">Contact</a>
+        </li>
+      </ul>
+      <button class="nav-btn" type="button" aria-label="Open mobile menu">
+        <svg class="menu-icon" width="40" height="40">
+          <use href="/markelora/assets/sprite-1882e608.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <button class="close-btn" type="button" aria-label="Close mobile menu">
+        <svg class="close-icon" width="40" height="40">
+          <use href="/markelora/assets/sprite-1882e608.svg#icon-close"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+    <div class="context-menu">
+  <nav class="context-nav">
+    <ul class="context-nav-list">
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#about">About</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#play">How To Play</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#uniqueness"
+          >Uniqueness</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#features"
+          >Benefits & Features</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#gallery">Gallery</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#advantages">Why Us</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    <main>
+      <section class="section hero-section" id="home">
+  <div class="hero-bg-wrapper">
+    <div class="container hero-container">
+      <div class="hero-content-wrapper">
+        <h1 class="hero-main-title">Echo Rune Quest</h1>
+        <p class="hero-text">
+          So basically, Echo Rune Quest is this puzzle game where your moves
+          actually affect what happens next - pretty cool concept. Solve
+          rune-based challenges, unlock hidden paths, and bring harmony back to
+          enchanted lands.
+        </p>
+        <div class="hero-bottom-text-wrapper">
+          <img
+            class="hero-img"
+            src="/markelora/assets/hero-img-d7596446.png"
+            alt="Screenshot of the game"
+            width="280"
+            height="177"
+          />
+          <p class="hero-bottom-text">
+            You'll wake up these ancient runes and try to fix whatever the hell
+            went wrong in this forgotten world.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section about-section" id="about">
+  <div class="about-bg-wrapper">
+    <div class="container about-container">
+      <h2 class="section-title about-title">Game Concept</h2>
+      <p class="about-text">
+        Echo Rune Quest mixes match-style gameplay with exploration and a bit of
+        storytelling. You'll explore different magical spots and activate these
+        runes to clean up the messed-up parts. Every level's its own puzzle, but
+        they all add up to build out the bigger world map.
+      </p>
+      <ul class="about-list">
+        <li class="about-list-item">
+          <picture>
+            <source
+              srcset="/markelora/assets/about-img1-desk-c24b3e55.png "
+              media="(min-width: 1440px)"
+              width="192"
+              height="258" />
+            <source
+              srcset="/markelora/assets/about-img1-mob-4add697c.png "
+              width="343"
+              height="210" />
+            <img
+              class="about-img"
+              src="/markelora/assets/about-img1-mob-4add697c.png"
+              alt="Screenshot of the game"
+              width="343"
+              height="210"
+              loading="lazy"
+          /></picture>
+        </li>
+        <li class="about-list-item">
+          <picture>
+            <source
+              srcset="/markelora/assets/about-img2-desk-62731798.png "
+              media="(min-width: 1440px)"
+              width="192"
+              height="258" />
+            <source
+              srcset="/markelora/assets/about-img2-mob-545813d1.png "
+              width="343"
+              height="210" />
+            <img
+              class="about-img"
+              src="/markelora/assets/about-img2-mob-545813d1.png"
+              alt="Screenshot of the game"
+              width="343"
+              height="210"
+              loading="lazy"
+          /></picture>
+        </li>
+        <li class="about-list-item">
+          <picture>
+            <source
+              srcset="/markelora/assets/about-img3-desk-dabf4f04.png "
+              media="(min-width: 1440px)"
+              width="192"
+              height="258" />
+            <source
+              srcset="/markelora/assets/about-img3-mob-dafd1fb7.png "
+              width="343"
+              height="210" />
+            <img
+              class="about-img"
+              src="/markelora/assets/about-img3-mob-dafd1fb7.png"
+              alt="Screenshot of the game"
+              width="343"
+              height="210"
+              loading="lazy"
+          /></picture>
+        </li>
+        <li class="about-list-item">
+          <picture>
+            <source
+              srcset="/markelora/assets/about-img4-desk-ab03fb44.png "
+              media="(min-width: 1440px)"
+              width="192"
+              height="258" />
+            <source
+              srcset="/markelora/assets/about-img4-mob-304afb56.png "
+              width="343"
+              height="210" />
+            <img
+              class="about-img"
+              src="/markelora/assets/about-img4-mob-304afb56.png"
+              alt="Screenshot of the game"
+              width="343"
+              height="210"
+              loading="lazy"
+          /></picture>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="section play-section" id="play">
+  <div class="play-bg-wrapper">
+    <div class="container play-container">
+      <div class="play-content-wrapper">
+        <h2 class="section-title play-title">How to Play</h2>
+        <p class="play-text">
+          Starts pretty easy, but you'll pick up some neat tricks the deeper you
+          go.
+        </p>
+        <ul class="play-list">
+          <li class="play-list-item">
+            <svg class="play-icon" width="20" height="20">
+              <use href="/markelora/assets/sprite-1882e608.svg#icon-check"></use>
+            </svg>
+            <p class="play-item-text">Match runes with the same symbols</p>
+          </li>
+          <li class="play-list-item">
+            <svg class="play-icon" width="20" height="20">
+              <use href="/markelora/assets/sprite-1882e608.svg#icon-check"></use>
+            </svg>
+            <p class="play-item-text">
+              Trigger chain reactions for bonus effects
+            </p>
+          </li>
+          <li class="play-list-item">
+            <svg class="play-icon" width="20" height="20">
+              <use href="/markelora/assets/sprite-1882e608.svg#icon-check"></use>
+            </svg>
+            <p class="play-item-text">Clear cursed tiles to unlock new areas</p>
+          </li>
+          <li class="play-list-item">
+            <svg class="play-icon" width="20" height="20">
+              <use href="/markelora/assets/sprite-1882e608.svg#icon-check"></use>
+            </svg>
+            <p class="play-item-text">
+              Complete objectives within limited moves
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <div class="features-bg-wrapper">
+        <section class="section uniqueness-section" id="uniqueness">
+  <div class="container uniqueness-container">
+    <div class="uniqueness-content-wrapper">
+      <div class="uniqueness-text-wrapper">
+        <h2 class="section-title uniqueness-title">What Makes It Special</h2>
+        <p class="uniqueness-text">
+          What makes Echo Rune Quest stand out from other puzzle games is its
+          rune-based mechanics instead of the usual gems, combined with echo
+          effects that actually influence your next moves. As you solve puzzles,
+          levels visually evolve, creating a sense of progression and discovery.
+          There’s no need to rush — you can take your time, relax, and enjoy a
+          thoughtful, unhurried experience.
+        </p>
+      </div>
+      <picture>
+        <source
+          srcset="/markelora/assets/uniqueness-img-desk-04975f16.png "
+          media="(min-width: 1440px)"
+          width="608"
+          height="368" />
+        <source
+          srcset="/markelora/assets/uniqueness-img-mob-8e0abf4e.png "
+          width="343"
+          height="208" />
+        <img
+          class="uniqueness-img"
+          src="/markelora/assets/uniqueness-img-mob-8e0abf4e.png"
+          alt="Screenshot of the game"
+          width="343"
+          height="208"
+          loading="lazy"
+      /></picture>
+    </div>
+  </div>
+</section>
+
+        <section class="section features-section" id="features">
+  <div class="container features-container">
+    <h2 class="section-title features-title">Benefits & Features</h2>
+    <p class="features-text">
+      Echo Rune Quest is built for players who enjoy thoughtful puzzles without
+      pressure or noise. Every level is handcrafted to feel meaningful, with a
+      smooth difficulty curve and a calm fantasy atmosphere that makes the game
+      easy to return to anytime.
+    </p>
+    <ul class="features-list">
+      <li class="features-list-item">
+        <svg class="features-icon" width="62" height="62">
+          <use href="/markelora/assets/sprite-1882e608.svg#icon-features1"></use>
+        </svg>
+        <p class="features-item-text">
+          Handcrafted puzzle levels with intentional design
+        </p>
+      </li>
+      <li class="features-list-item">
+        <svg class="features-icon" width="62" height="62">
+          <use href="/markelora/assets/sprite-1882e608.svg#icon-features2"></use>
+        </svg>
+        <p class="features-item-text">
+          Soft fantasy visuals and subtle ambient animations
+        </p>
+      </li>
+      <li class="features-list-item">
+        <svg class="features-icon" width="62" height="62">
+          <use href="/markelora/assets/sprite-1882e608.svg#icon-features3"></use>
+        </svg>
+        <p class="features-item-text">
+          Gradual difficulty progression without sudden spikes
+        </p>
+      </li>
+      <li class="features-list-item">
+        <svg class="features-icon" width="62" height="62">
+          <use href="/markelora/assets/sprite-1882e608.svg#icon-features4"></use>
+        </svg>
+        <p class="features-item-text">
+          Short, offline-friendly levels for relaxed play sessions
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      </div>
+      <section class="gallery-section section" id="gallery">
+  <div class="gallery-bg-wrapper">
+    <div class="container gallery-container">
+      <h2 class="section-title gallery-title">Gallery</h2>
+      <div class="gallery-swiper-container">
+        <ul class="swiper-wrapper gallery-swiper-wrapper">
+          <li class="swiper-slide gallery-slide">
+            <picture>
+              <source
+                srcset="/markelora/assets/gallery-img1-desk-38d5f872.png "
+                media="(min-width: 1440px)"
+                width="416"
+                height="233" />
+              <source
+                srcset="/markelora/assets/gallery-img1-mob-a1d1af83.png "
+                width="343"
+                height="192" />
+              <img
+                class="gallery-img"
+                src="/markelora/assets/gallery-img1-mob-a1d1af83.png"
+                alt="Screenshot of the game"
+                width="343"
+                height="192"
+                loading="lazy"
+            /></picture>
+          </li>
+          <li class="swiper-slide gallery-slide">
+            <picture>
+              <source
+                srcset="/markelora/assets/gallery-img2-desk-187c23f9.png "
+                media="(min-width: 1440px)"
+                width="416"
+                height="233" />
+              <source
+                srcset="/markelora/assets/gallery-img2-mob-21e6b813.png "
+                width="343"
+                height="192" />
+              <img
+                class="gallery-img"
+                src="/markelora/assets/gallery-img2-mob-21e6b813.png"
+                alt="Screenshot of the game"
+                width="343"
+                height="192"
+                loading="lazy"
+            /></picture>
+          </li>
+          <li class="swiper-slide gallery-slide">
+            <picture>
+              <source
+                srcset="/markelora/assets/gallery-img3-desk-947b2757.png "
+                media="(min-width: 1440px)"
+                width="416"
+                height="233" />
+              <source
+                srcset="/markelora/assets/gallery-img3-mob-ad8d1f73.png "
+                width="343"
+                height="192" />
+              <img
+                class="gallery-img"
+                src="/markelora/assets/gallery-img3-mob-ad8d1f73.png"
+                alt="Screenshot of the game"
+                width="343"
+                height="192"
+                loading="lazy"
+            /></picture>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section advantages-section" id="advantages">
+  <div class="advantages-bg-wrapper">
+    <div class="container advantages-container">
+      <img
+        class="advantages-img"
+        src="/markelora/assets/hero-img-d7596446.png"
+        alt="Screenshot of the game"
+        width="280"
+        height="177"
+      />
+      <h2 class="section-title advantages-title">Designed for Relaxed Play</h2>
+      <p class="advantages-text">
+        Echo Rune Quest is designed for stress-free puzzle solving and players
+        who care about atmosphere as much as gameplay. The clean interface keeps
+        distractions to a minimum, letting you focus on the experience itself.
+        With no timers or pressure mechanics, the game invites you to slow down,
+        think, and enjoy a calm, thoughtful flow you’ll want to return to again
+        and again.
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="section contact-section" id="contact">
+  <div class="container contact-container">
+    <div class="contact-content-wrapper">
+      <p class="contact-subtitle">Questions or collaboration requests:</p>
+      <a href="mailto:info@markelora.com" class="contact-link">
+        <span class="contact-btn-span">info@markelora.com</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer" id="footer">
+  <div class="container footer-container">
+    <nav class="footer-nav">
+      <ul class="footer-list">
+        <li class="footer-list-item">
+          <a class="footer-link" href="./privacy-policy.html">Privacy Policy</a>
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-link" href="./terms-and-conditions.html"
+            >Terms and Conditions</a
+          >
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-link" href="./cookies-policy.html">Cookies Policy</a>
+        </li>
+      </ul>
+    </nav>
+    <p class="footer-text">© 2026 markelora.com — All rights reserved.</p>
+  </div>
+</footer>
+
+    <section id="cookie-banner" class="cookie-banner-section">
+  <div class="cookie-banner-wrapper">
+    <p class="cookie-banner-text">
+      We use cookies to enhance your experience while using our website. By
+      continuing to use this site, you consent to our use of cookies.
+    </p>
+    <div class="cookie-banner-buttons">
+      <button class="cookie-accept-btn" id="cookie-accept">Accept</button>
+      <button class="cookie-decline-btn" id="cookie-decline">Reject</button>
+    </div>
+  </div>
+</section>
+
+
+    
+  </body>
+</html>
