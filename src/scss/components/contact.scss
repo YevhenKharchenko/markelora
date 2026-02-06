@@ -1,0 +1,113 @@
+.contact-section {
+  @include media(desktop) {
+  }
+}
+
+.contact-bg-wrapper {
+  padding-top: 64px;
+  padding-bottom: 80px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/contact/contact-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    max-width: 1440px;
+    background-image: url(../img/contact/contact-bg-desk.jpg);
+  }
+}
+
+.contact-container {
+  @include media(desktop) {
+  }
+}
+
+.contact-content-wrapper {
+  @include media(desktop) {
+    max-width: 640px;
+    margin-left: auto;
+  }
+}
+
+.contact-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    font-size: 42px;
+  }
+}
+
+.contact-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.contact-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #adb9b0;
+  word-break: break-all;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.arrow-icon {
+  min-width: 32px;
+
+  @include media(desktop) {
+  }
+}
+
+.contact-btn {
+  max-width: 343px;
+
+  @include media(desktop) {
+    max-width: 220px;
+  }
+}
+
+.contact-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #fff;
+  text-align: center;
+  margin-top: 8px;
+
+  @include media(desktop) {
+  }
+}
