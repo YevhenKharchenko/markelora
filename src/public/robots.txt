@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://slotreign.pro/sitemap.xml
+Sitemap: https://markelora.com/sitemap.xml
